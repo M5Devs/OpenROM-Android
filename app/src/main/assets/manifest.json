@@ -1,0 +1,85 @@
+{
+  "format_version": 1,
+  "tools": {
+    "chdman": {
+      "version": "mame0289",
+      "license": "GPL-2.0-or-later OR BSD-3-Clause",
+      "upstream_repo": "https://github.com/mamedev/mame",
+      "provenance": "npm-package",
+      "platforms": {
+        "android/arm64-v8a": {
+          "path": "android/arm64-v8a/chdman",
+          "sha256": "a9e899dcfcb7c7657c5811b6fa68a4e5ed5ea0d748a06c1096d9cfe0f88fe571",
+          "size": 1773448,
+          "executable": true,
+          "status": "ok",
+          "same_as": "linux/arm64/chdman"
+        }
+      },
+      "npm_package": "@emmercm/chdman-*"
+    },
+    "ecm": {
+      "version": "2.0.0",
+      "license": "GPL-2.0-only",
+      "upstream_repo": "https://github.com/kidoz/ecm",
+      "provenance": "upstream-release",
+      "platforms": {
+        "android/arm64-v8a": {
+          "path": "android/arm64-v8a/ecm",
+          "sha256": "2f89f0181b7ddbd6009b9e0aa37c802903ffe372630fa13f1778b2c6bf6d815a",
+          "size": 72976,
+          "executable": true,
+          "status": "ok",
+          "same_as": "linux/arm64/ecm"
+        }
+      }
+    },
+    "unecm": {
+      "license": "GPL-2.0-only",
+      "upstream_repo": "https://github.com/kidoz/ecm",
+      "provenance": "upstream-release",
+      "platforms": {
+        "android/arm64-v8a": {
+          "path": "android/arm64-v8a/unecm",
+          "sha256": "83b60edf4765e92f321e587f0db51c7525ccc5b5d83251e96cc1c6c3d13426de",
+          "size": 72576,
+          "executable": true,
+          "status": "ok",
+          "same_as": "linux/arm64/unecm"
+        }
+      }
+    },
+    "maxcso": {
+      "version": "1.4.0",
+      "license": "ISC",
+      "upstream_repo": "https://github.com/unknownbrackets/maxcso",
+      "provenance": "upstream-release",
+      "platforms": {
+        "android/arm64-v8a": {
+          "path": "android/arm64-v8a/maxcso",
+          "sha256": "debd3c3923f11b2c04345152479e99e5d0b7d60ed1aa4545c53bc2209c627356",
+          "size": 854112,
+          "executable": true,
+          "status": "ok"
+        }
+      }
+    },
+    "xdelta3": {
+      "version": "3.2.0",
+      "license": "Apache-2.0",
+      "upstream_repo": "https://github.com/jmacd/xdelta",
+      "provenance": "upstream-release",
+      "platforms": {
+        "android/arm64-v8a": {
+          "path": "android/arm64-v8a/xdelta3",
+          "sha256": "55977f2792800d646baa40ebde0c9959f5f25806d5f0e23edb0499c00158ccaf",
+          "size": 430592,
+          "executable": true,
+          "status": "ok",
+          "version": "3.2.2",
+          "note": "android build predates this manifest; not republished (upstream asset is dynamic)"
+        }
+      }
+    }
+  }
+}

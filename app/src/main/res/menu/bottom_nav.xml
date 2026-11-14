@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/convertFragment"
+        android:icon="@drawable/ic_nav_convert"
+        android:title="@string/nav_convert" />
+    <item
+        android:id="@+id/pluginsFragment"
+        android:icon="@drawable/ic_nav_plugins"
+        android:title="@string/nav_plugins" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_nav_settings"
+        android:title="@string/nav_settings" />
+</menu>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/openrom_surface"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/progress_romeo"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/cd_romeo"
+        android:src="@drawable/romeo_working" />
+
+    <TextView
+        android:id="@+id/progress_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.OpenROM.Title"
+        tools:text="Converting game.iso" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:indicatorColor="@color/openrom_primary"
+        app:trackColor="@color/openrom_surface_high" />
+
+    <TextView
+        android:id="@+id/progress_percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="end"
+        android:textAppearance="@style/TextAppearance.OpenROM.Body"
+        tools:text="67%" />
+
+    <ScrollView
+        android:id="@+id/log_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/openrom_background"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/progress_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textColor="@color/openrom_on_surface_variant"
+            android:textSize="12sp"
+            tools:text="> Hashing input..." />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/progress_elapsed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textAppearance="@style/TextAppearance.OpenROM.Body"
+        tools:text="Elapsed: 00:42" />
+
+    <TextView
+        android:id="@+id/progress_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.OpenROM.Body"
+        android:visibility="gone"
+        tools:text="Output: 1.4 GB" />
+
+    <LinearLayout
+        android:id="@+id/progress_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/action_secondary"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:text="Copy log" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/action_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+    </LinearLayout>
+</LinearLayout>
