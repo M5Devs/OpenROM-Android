@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- OpenROM brand palette: near-black surfaces with a cyan accent. -->
+    <color name="openrom_background">#0A0A0F</color>
+    <color name="openrom_surface">#12121A</color>
+    <color name="openrom_surface_variant">#1B1B26</color>
+    <color name="openrom_surface_high">#23232F</color>
+    <color name="openrom_primary">#00E5FF</color>
+    <color name="openrom_primary_dim">#00B8CC</color>
+    <color name="openrom_on_primary">#00202A</color>
+    <color name="openrom_on_surface">#E0E0E0</color>
+    <color name="openrom_on_surface_variant">#9AA0A6</color>
+    <color name="openrom_outline">#2E2E3C</color>
+    <color name="openrom_error">#FF5370</color>
+
+    <!-- Format badge colours, mirrored from FormatDetector.builtinFormatColors. -->
+</resources>

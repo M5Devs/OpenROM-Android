@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShapeAppearance.OpenROM.Card" parent="ShapeAppearance.Material3.Corner.Medium">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.OpenROM.Sheet" parent="ShapeAppearance.Material3.Corner.Large">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">24dp</item>
+        <item name="cornerSizeTopRight">24dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <!-- Material 3 base theme, dark-only: the brand is a dark UI. -->
+    <style name="Theme.OpenROM" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/openrom_primary</item>
+        <item name="colorOnPrimary">@color/openrom_on_primary</item>
+        <item name="colorPrimaryContainer">@color/openrom_primary_dim</item>
+        <item name="colorOnPrimaryContainer">@color/openrom_on_primary</item>
+        <item name="colorSecondary">@color/openrom_primary</item>
+        <item name="colorOnSecondary">@color/openrom_on_primary</item>
+        <item name="colorSurface">@color/openrom_surface</item>
+        <item name="colorOnSurface">@color/openrom_on_surface</item>
+        <item name="colorSurfaceVariant">@color/openrom_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/openrom_on_surface_variant</item>
+        <item name="colorOutline">@color/openrom_outline</item>
+        <item name="colorError">@color/openrom_error</item>
+        <item name="android:colorBackground">@color/openrom_background</item>
+        <item name="colorOnBackground">@color/openrom_on_surface</item>
+        <item name="android:statusBarColor">@color/openrom_background</item>
+        <item name="android:navigationBarColor">@color/openrom_surface</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="bottomSheetDialogTheme">@style/Theme.OpenROM.BottomSheet</item>
+        <item name="materialAlertDialogTheme">@style/Theme.OpenROM.Dialog</item>
+    </style>
+
+    <style name="Theme.OpenROM.BottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.OpenROM.BottomSheet</item>
+    </style>
+
+    <style name="Widget.OpenROM.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">@color/openrom_surface</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.OpenROM.Sheet</item>
+        <item name="behavior_peekHeight">480dp</item>
+    </style>
+
+    <style name="Theme.OpenROM.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/openrom_surface_high</item>
+        <item name="colorOnSurface">@color/openrom_on_surface</item>
+    </style>
+
+    <!-- Reusable text styles -->
+    <style name="TextAppearance.OpenROM.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/openrom_on_surface</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.OpenROM.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/openrom_on_surface_variant</item>
+    </style>
+
+    <style name="Widget.OpenROM.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/openrom_surface_variant</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="contentPadding">0dp</item>
+    </style>
+</resources>
